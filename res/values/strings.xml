@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelpMe!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="notice">"Click the following Button incase of Any Emergency!"</string>
+    <string name="press_me">Get Help Now!</string>
+	<string name="textUnderHelpButton">I Need Help!</string>
+</resources>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainPage" >
+
+    <TextView
+        android:id="@+id/IneedHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpMeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/textUnderHelpButton"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textStyle="italic" />
+
+    <EditText
+        android1:id="@+id/customText"
+        android1:layout_width="289dp"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@android:id/tabs"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="17dp"
+        android1:ems="10"
+        android1:gravity="center"
+        android1:hint="Help me. Follow my location - URL."
+        android1:inputType="textMultiLine"
+        android1:lines="4"
+        android1:padding="4dp"
+        android1:textColor="#000000"
+        android1:textColorHint="#CCCCCC" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android1:id="@+id/addGuardian"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_centerHorizontal="true"
+        android1:background="@drawable/button" />
+
+    <Button
+        android1:id="@+id/updateMessage"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignRight="@+id/addGuardian"
+        android1:layout_below="@+id/customText"
+        android1:text="Update!" />
+
+    <TextView
+        android1:id="@+id/warningMessage"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/updateMessage"
+        android1:gravity="center"
+        android1:text="@string/notice"
+        android1:textColor="#FF0000"
+        android1:textStyle="bold" />
+
+    <Button
+        android1:id="@+id/helpMeButton"
+        android1:layout_width="143dp"
+        android1:layout_height="134dp"
+        android1:layout_below="@+id/warningMessage"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="16dp"
+        android1:background="@drawable/redbutton"
+        android1:focusable="true"
+        android1:text="@string/press_me"
+        android1:textStyle="bold" />
+
+</RelativeLayout>
